@@ -1,0 +1,188 @@
+\documentclass[a4paper, 8pt]{extarticle}
+\usepackage[top=0.2in, bottom=0.2in, left=0.2in, right=0.2in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{multicol}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% Minimal spacing for maximum density
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\linespread{0.8} 
+
+% Section formatting
+\titleformat{\section}{\bfseries\small\centering}{}{0em}{}
+\titlespacing*{\section}{0pt}{3pt}{2pt}
+\titleformat{\subsection}{\bfseries\footnotesize\centering}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{2pt}{1pt}
+
+% Language Setup
+\setmainlanguage{bengali}
+\setotherlanguage{english}
+
+% Font Setup (Ensure Kalpurush is installed)
+\newfontfamily\bengalifont[Script=Bengali, Scale=0.9, AutoFakeBold=2.0]{Kalpurush}
+\setmainfont{Times New Roman}
+
+\begin{document}
+
+% Compact Title
+\centerline{\textbf{99\% Important Questions (Diff. Geo)}}
+\vspace{2pt}
+
+\begin{multicols}{3}
+
+% --- Chapter 1 ---
+\centerline{\textbf{\underline{Chapter 1: Curves}}}
+
+\textbf{১.০২ স্পর্শ-লম্ব তল কাকে বলে?} \\
+উত্তর: $P$ বিন্দুর খুব নিকটবর্তী দুটি বিন্দু $Q$ ও $R$ হলে, $Q \rightarrow P$ এবং $R \rightarrow P$ সীমার মধ্যে $P, Q, R$ বিন্দুগামী সমতলকে $P$ বিন্দুতে স্পর্শ-লম্ব তল বলে।
+
+\textbf{১.০৩ অভিলম্ব রেখা কাকে বলে?} \\
+উত্তর: কোনো বক্ররেখার উপরস্থ কোনো বিন্দুতে স্পর্শক রেখার উপর লম্ব রেখাকে ঐ বিন্দুর অভিলম্ব রেখা বলা হয়।
+
+\textbf{১.০৪ কুন্ডলীর পিচ বলতে কি বুঝ?} \\
+উত্তর: অক্ষের চারদিকে একটি পূর্ণ আবর্তন এর সাপেক্ষে অক্ষ বরাবর কুন্ডলীর যে সরণ ঘটে, তাকে পিচ (Pitch) বলে।
+
+\textbf{১.০৮ প্যাঁচ কী?} \\
+উত্তর: বক্ররেখার কোনো বিন্দুতে স্পর্শ-লম্ব তলের ঘূর্ণনের হারকে বা দ্বি-অভিলম্বের দিক পরিবর্তনের হারকে প্যাঁচ (Torsion) বলে।
+
+\textbf{১.১১ প্যাঁচের ব্যাসার্ধ কাকে বলে?} \\
+উত্তর: প্যাঁচের বিপরীত মানই হলো প্যাঁচের ব্যাসার্ধ। অর্থাৎ $\sigma = \frac{1}{\tau}$।
+
+\textbf{১.১২ প্যাঁচ ও প্যাঁচের ব্যাসার্ধের সম্পর্ক কী?} \\
+উত্তর: প্যাঁচ $\tau$ এবং ব্যাসার্ধ $\sigma$ হলে, $\sigma = \frac{1}{\tau}$ বা $\tau \sigma = 1$।
+
+\textbf{১.১৩ বক্রতা ও টরসনের অনুপাত কখন ধ্রুবক?} \\
+উত্তর: যখন বক্ররেখাটি একটি কুন্ডলীতে (Helix) পরিণত হয়।
+
+\textbf{১.১৪ সেরেট ফ্রেনেট সূত্রগুলো বর্ণনা কর।} \\
+উত্তর: ১. $\mathbf{t}' = \kappa \mathbf{n}$, ২. $\mathbf{n}' = \tau \mathbf{b} - \kappa \mathbf{t}$, ৩. $\mathbf{b}' = -\tau \mathbf{n}$।
+
+\textbf{১.১৬ ইভোলিউটের সংজ্ঞা দাও।} \\
+উত্তর: কোনো প্রদত্ত বক্ররেখার বক্রতার কেন্দ্রগুলোর (Centers of curvature) সঞ্চারপথকে উক্ত বক্ররেখার ইভোলিউট বা কেন্দ্রজ বলা হয়।
+
+\textbf{১.১৮ অভিলম্ব সমতলের সমীকরণ লিখ।} \\
+উত্তর: $(\mathbf{R} - \mathbf{r}) \cdot \mathbf{t} = 0$।
+
+\textbf{১.২০ সেরেট-ফ্রেনেট ম্যাট্রিক্স আকার।} \\
+উত্তর:
+$
+\begin{pmatrix} \mathbf{t}' \\ \mathbf{n}' \\ \mathbf{b}' \end{pmatrix} = 
+\begin{pmatrix} 
+0 & \kappa & 0 \\ 
+-\kappa & 0 & \tau \\ 
+0 & -\tau & 0 
+\end{pmatrix} 
+\begin{pmatrix} \mathbf{t} \\ \mathbf{n} \\ \mathbf{b} \end{pmatrix}
+$
+
+\textbf{১.২৫ শঙ্খবৃত্ত ও কুন্ডলীর পার্থক্য লিখ।} \\
+উত্তর: শঙ্খবৃত্ত একটি সমতলীয় বক্ররেখা (Plane curve), কিন্তু কুন্ডলী হলো একটি ত্রিমাত্রিক বক্ররেখা (Space curve)।
+
+\textbf{১.২৬ দ্বৈত অনুপাত (Cross Ratio) এর সূত্র।} \\
+উত্তর: চারটি বিন্দু $P, Q, R, S$ হলে: $\frac{PR}{RQ} \cdot \frac{SQ}{PS}$।
+
+\textbf{১.২৭ দারবক্স ভেক্টর কি?} \\
+উত্তর: $\mathbf{d} = \tau \mathbf{t} + \kappa \mathbf{b}$ ভেক্টরটিকে দারবক্স ভেক্টর বলে।
+
+\textbf{১.২৮ বার্ট্রান্ড কার্ভের সংজ্ঞা দাও।} \\
+উত্তর: দুটি বক্ররেখার অনুরূপ বিন্দুতে প্রধান অভিলম্ব একই রেখা হলে, তাদের বার্ট্রান্ড কার্ভ বলে।
+
+\textbf{১.২৯ একক স্পর্শ ভেক্টর।} \\
+উত্তর: $\mathbf{t} = \frac{\mathbf{r}'}{|\mathbf{r}'|}$। (প্যারামিটার $s$ হলে $\mathbf{t} = \mathbf{r}'$)।
+
+\textbf{১.৩০ স্পর্শ দ্বি-অভিলম্ব সমতলের সমীকরণ।} \\
+উত্তর: $(\mathbf{R} - \mathbf{r}) \cdot \mathbf{n} = 0$।
+
+\textbf{১.৩৪ ব্যতিচার বিন্দু (Striction Point) কী?} \\
+উত্তর: রুল্ড তলের জেনারেটরের উপরস্থ যে বিন্দুটি পার্শ্ববর্তী জেনারেটর থেকে ন্যূনতম দূরত্বে অবস্থান করে, তাকে ব্যতিচার বিন্দু বলে।
+
+\textbf{১.৩৫ ব্যতিচার স্পর্শক (Striction Tangent) কী?} \\
+উত্তর: রুল্ড তলের ব্যতিচার রেখার (Line of striction) কোনো বিন্দুতে অঙ্কিত স্পর্শককে ব্যতিচার স্পর্শক বলে।
+
+\textbf{১.৩৬ কুন্ডলী হওয়ার প্রয়োজনীয় শর্ত।} \\
+উত্তর: বক্রতা ও প্যাঁচের অনুপাত ধ্রুবক হতে হবে। $\frac{\tau}{\kappa} = c$।
+
+\textbf{১.৩৭ সরলরেখা হওয়ার শর্ত কি?} \\
+উত্তর: বক্রতা শূন্য হতে হবে, অর্থাৎ $\kappa = 0$।
+
+\textbf{১.৩৮ $u=1$ এ $\mathbf{x} = (u, u^2, u^3)$ এর স্পর্শক?} \\
+উত্তর: $\dot{\mathbf{x}} = (1, 2u, 3u^2) \xrightarrow{u=1} (1, 2, 3)$। 
+$|\dot{\mathbf{x}}| = \sqrt{14}$। $\therefore \mathbf{t} = \frac{1}{\sqrt{14}}(1, 2, 3)$।
+
+\textbf{১.৪০ চাপদৈর্ঘ্য নির্ণয়ের সূত্র।} \\
+উত্তর: $s = \int_{u_0}^{u} |\mathbf{r}'(u)| \, du$।
+
+\textbf{১.৪১ ইনভোলিউটের সমীকরণটি লিখ।} \\
+উত্তর: $\mathbf{r}_1 = \mathbf{r} + (c - s)\mathbf{t}$।
+
+\textbf{১.৪৩ কুন্ডলীর সংজ্ঞা দাও।} \\
+উত্তর: বক্ররেখার স্পর্শকগুলো কোনো নির্দিষ্ট দিকের সাথে ধ্রুবক কোণ উৎপন্ন করলে তাকে কুন্ডলী বলে।
+
+\textbf{১.৪৪ প্রধান অভিলম্বের গোলকীয় ইনডিকেট্রিক্স।} \\
+উত্তর: বক্ররেখার একক প্রধান অভিলম্ব ভেক্টর $\mathbf{n}$-এর সমান অবস্থান ভেক্টর বিশিষ্ট বিন্দুর সঞ্চারপথ।
+
+% --- Chapter 2 ---
+\vspace{2pt}
+\centerline{\textbf{\underline{Chapter 2: Surfaces}}}
+
+\textbf{২.০৪ জিওডেসিক বক্রতা কাকে বলে?} \\
+উত্তর: তলের স্পর্শক তলে অবস্থিত বক্ররেখার বক্রতা ভেক্টরের উপাংশ। মান $\kappa_g = [\mathbf{N}, \mathbf{r}', \mathbf{r}'']$।
+
+\textbf{২.০৫ গড় বক্রতা কাকে বলে?} \\
+উত্তর: $M = \frac{1}{2}(\kappa_a + \kappa_b) = \frac{eG - 2fF + gE}{2(EG - F^2)}$।
+
+\textbf{২.০৬ মিউসনেয়ারের উপপাদ্য।} \\
+উত্তর: $\kappa_n = \kappa \cos \theta$, যেখানে $\theta$ হলো স্পর্শ-লম্ব তল ও তলের অভিলম্বের মধ্যবর্তী কোণ।
+
+\textbf{২.০৭ $x^2 + (y-a)^2 = a^2$ কী প্রকাশ করে?} \\
+উত্তর: এটি একটি \textbf{বৃত্তাকার সিলিন্ডার} (Circular Cylinder) প্রকাশ করে।
+
+\textbf{২.০৯ বক্রতলের ক্ষেত্রফল নির্ণয়ের সূত্র।} \\
+উত্তর: $A = \iint \sqrt{EG - F^2} \, du \, dv$।
+
+\textbf{২.১১ প্রধান দিক কাকে বলে?} \\
+উত্তর: যে দিকগুলোর বরাবর অভিলম্ব বক্রতা ($\kappa_n$) সর্বোচ্চ বা সর্বনিম্ন হয়, তাকে প্রধান দিক বলে।
+
+\textbf{২.১৫ ডুপিন ইন্ডিকেট্রিক্স কি?} \\
+উত্তর: তলের কোনো বিন্দুতে স্পর্শক তলের সমান্তরাল ও নিকটবর্তী তল দ্বারা বক্রতলটিকে ছেদ করলে প্রাপ্ত কনিক।
+
+\textbf{২.১৭ রডরিগের সূত্রটি লিখ।} \\
+উত্তর: $d\mathbf{N} + \kappa_n d\mathbf{r} = 0$।
+
+\textbf{২.১৮ ইভোলিউটের সমীকরণটি লিখ।} \\
+উত্তর: $\mathbf{r}_1 = \mathbf{r} + \rho \mathbf{n} + \rho \cot (\int \tau ds + c) \mathbf{b}$।
+
+\textbf{২.১৯ বক্ররৈখিক স্থানাংক কাকে বলে?} \\
+উত্তর: ত্রিমাত্রিক দেশে $(x, y, z)$ কে তিনটি স্বাধীন প্যারামিটার $(u, v, w)$ এর মাধ্যমে প্রকাশ করা হলে তাদের বক্ররৈখিক স্থানাংক বলে।
+
+\textbf{২.২০ পরাবৃত্তীয় বিন্দু কী?} \\
+উত্তর: গাউসিয়ান বক্রতা $K=0$ বা $eg - f^2 = 0$ হলে তাকে পরাবৃত্তীয় বিন্দু বলে।
+
+\textbf{২.২২ দ্বিতীয় মৌলিক আকার $L, M, N$ এর মান।} \\
+উত্তর: $L = \mathbf{r}_{uu} \cdot \mathbf{N}$, $M = \mathbf{r}_{uv} \cdot \mathbf{N}$, $N = \mathbf{r}_{vv} \cdot \mathbf{N}$।
+
+\textbf{২.২৩ অয়লারের উপপাদ্যটি বর্ণনা কর।} \\
+উত্তর: $\kappa_n = \kappa_a \cos^2 \psi + \kappa_b \sin^2 \psi$।
+
+\textbf{২.২৪ $z = f(x, y)$-এর দ্বিতীয় মৌলিক আকার।} \\
+উত্তর: $II = \frac{r dx^2 + 2s dx dy + t dy^2}{\sqrt{1 + p^2 + q^2}}$।
+
+\textbf{২.২৬ মং এর পৃষ্ঠতলের সমীকরণ।} \\
+উত্তর: $z = f(x, y)$।
+
+\textbf{২.২৮ বক্রতার রেখা কী?} \\
+উত্তর: যে রেখার প্রতিটি বিন্দুতে স্পর্শক রেখাটি ঐ বিন্দুর প্রধান দিক বরাবর থাকে।
+
+\textbf{২.২৯ u-পরামিতিক রেখা কাকে বলে?} \\
+উত্তর: $\mathbf{r}(u, v)$ সমীকরণে $v = \text{ধ্রুবক}$ হলে তাকে u-পরামিতিক রেখা বলে।
+
+\textbf{২.৩০ অসীমতটীয় রেখা কী?} \\
+উত্তর: যে রেখার প্রতি বিন্দুতে স্পর্শক ঐ বিন্দুর অসীমতটীয় দিক (যে দিকে $\kappa_n=0$) নির্দেশ করে।
+
+\end{multicols}
+\end{document}
